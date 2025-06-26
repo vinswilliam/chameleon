@@ -1,0 +1,199 @@
+.lucky-draw-page {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.draw-container {
+  background: white;
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.draw-container h1 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.draw-container p {
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.wheel-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.wheel-pointer {
+  position: absolute;
+  top: -10px;
+  z-index: 10;
+  font-size: 2rem;
+  color: #333;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.wheel {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 8px solid #333;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.wheel-segment {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  transform-origin: 100% 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.prize-text {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
+  width: 100px;
+  text-align: center;
+}
+
+.spin-btn {
+  background: linear-gradient(135deg, #FF6B6B, #FF8E8E);
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.spin-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #FF5252, #FF7979);
+  box-shadow: 0 12px 35px rgba(255, 107, 107, 0.4);
+}
+
+.spin-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.result-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.result-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: white;
+  min-width: 250px;
+}
+
+.result-card h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.prize-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.continue-btn {
+  background: #4ECDC4;
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(78, 205, 196, 0.3);
+  transition: all 0.3s ease;
+}
+
+.continue-btn:hover {
+  background: #45B7D1;
+  box-shadow: 0 12px 35px rgba(78, 205, 196, 0.4);
+}
+
+@media (max-width: 480px) {
+  .draw-container {
+    padding: 30px 20px;
+  }
+  
+  .draw-container h1 {
+    font-size: 1.8rem;
+  }
+  
+  .wheel {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .prize-text {
+    font-size: 0.8rem;
+    top: 15px;
+    left: 5px;
+    width: 80px;
+  }
+  
+  .spin-btn {
+    padding: 16px 32px;
+    font-size: 1.1rem;
+  }
+  
+  .result-card {
+    padding: 20px;
+    min-width: 200px;
+  }
+  
+  .result-card h2 {
+    font-size: 1.5rem;
+  }
+  
+  .prize-name {
+    font-size: 1.2rem;
+  }
+}

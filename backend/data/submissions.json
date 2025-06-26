@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1750953944053",
+    "phoneNumber": "12312",
+    "outletNumber": "123",
+    "eligibilityAge": 18,
+    "otpVerified": true,
+    "questionAnswers": {
+      "q1": "Website",
+      "q2": 5,
+      "q3": "1234"
+    },
+    "timestamp": "2025-06-26T16:05:44.053Z",
+    "luckyDrawResult": "Thank You"
+  }
+]

@@ -1,0 +1,101 @@
+.landing-page {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.hero-section {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.product-image {
+  margin-bottom: 30px;
+}
+
+.product-placeholder {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.product-placeholder h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.product-placeholder p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.content p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.qr-section {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 30px 0;
+  display: inline-block;
+}
+
+.qr-text {
+  color: #333;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.get-started-btn {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3);
+  transition: all 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background: #ff5252;
+  box-shadow: 0 12px 35px rgba(255, 107, 107, 0.4);
+}
+
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 2rem;
+  }
+  
+  .product-placeholder h2 {
+    font-size: 1.5rem;
+  }
+  
+  .qr-section svg {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
